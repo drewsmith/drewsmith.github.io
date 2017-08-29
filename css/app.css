@@ -7,32 +7,37 @@ body {
 }
 nav {
     background: #0074D9;
-    padding: 10px;
+    padding: 14px;
     box-shadow: 0 2px 10px #999999;
     margin-bottom:20px;
 }
 nav a {
     text-shadow: 0 1px 1px #333333;
+    font-weight: 300;
+    color: #FFFFFF;
 }
 nav ul, footer ul {
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     list-style: none;
-    font-weight: bold;
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    border-right: 1px solid #ddd;
+    padding: 4px 8px;
+}
+nav ul li:last-child, footer ul li:last-child {
+    border-right:0px;
 }
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    transition:opacity 1s linear;
 }
 a:hover {
-    text-decoration: underline;
+    opacity: 0.8;
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
@@ -41,18 +46,20 @@ p {
 }
 footer {
     font-size: .8em;
-    padding: 6px;
+    padding: 14px;
     text-align: center;
     background: #F9F9F9;
     border-top:1px solid #F1F1F1;
     margin-top: 20px;
     box-shadow: 0 2px 4px #dddddd;
 }
-
 footer a {
     color: #666666;
 }
-
+footer i {
+    margin-right: 10px;
+    opacity: 0.5;
+}
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -63,5 +70,13 @@ ul.posts li {
 }
 
 .container {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.padding {
     padding: 20px;
 }

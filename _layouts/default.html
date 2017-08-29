@@ -3,21 +3,27 @@
   <head>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fa.min.css" />
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
     </nav>
-    <div class="container">
+    <div class="container padding">
       {{ content }}
     </div>
     <footer>
-      <ul>
-        <li><a href="mailto:andrew.j.smith.jr@gmail.com">andrew.j.smith.jr@gmail.com</a></li>
-        <li><a href="https://github.com/drewsmith">github.com/drewsmith</a></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li><i class="fa fa-envelope"></i><a href="mailto:andrew.j.smith.jr@gmail.com">andrew.j.smith.jr@gmail.com</a></li>
+          <li><i class="fa fa-github"></i><a href="https://github.com/drewsmith">github.com/drewsmith</a></li>
+          <li><i class="fa fa-twitter"></i><a href="https://twitter.com/hisdrewness">github.com/drewsmith</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
