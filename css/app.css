@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
-    margin: 60px auto;
-    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    background: #0074D9;
+    padding: 10px;
+    box-shadow: 0 2px 10px #999999;
+    margin-bottom:20px;
+}
+nav a {
+    text-shadow: 0 1px 1px #333333;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -14,7 +25,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #FFFFFF;
 }
 a:hover {
     text-decoration: underline;
@@ -29,8 +40,17 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    padding: 6px;
+    text-align: center;
+    background: #F9F9F9;
+    border-top:1px solid #F1F1F1;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px #dddddd;
+}
+
+footer a {
+    color: #666666;
 }
 
 ul.posts { 
@@ -40,4 +60,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.container {
+    padding: 20px;
 }
