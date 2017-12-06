@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Drew skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #f9f9f9 !default;
+$text-color: #263238 !default;
+$muted-text-color: #263238 !default;
+$primary-color: #263238 !default;
+$border-color: mix(#fff, #263238, 75%) !default;
+$footer-background-color: $primary-color !default;
+$link-color: #263238 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons .fa {
+  color: inherit;
+}
+
+.masthead {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+  background-color: $primary-color !important;
+  color: #ffffff !important;
+}
+
+.greedy-nav {
+  background-color: $primary-color !important;
+  color: #fff !important;
+}
+
+.site-title, .visible-links {
+  color: #ffffff !important;
+  font-weight: 100 !important;
+  text-shadow: 0 1px 4px #000;
+}
+
+.author__name {
+  font-weight: 400;
+}
+
+.archive__subtitle {
+  font-weight: 400 !important;
+  border-bottom: 1px solid #f0f0f0;
+}
