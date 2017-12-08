@@ -6,20 +6,20 @@
 $header-background-color: #4285f4 !default;
 $background-color: #ffffff !default;
 $text-color: #424242 !default;
-$muted-text-color: #424242 !default;
+$muted-text-color: #BBDEFB !default;
 $primary-color: #424242 !default;
-$border-color: mix(#fff, #424242, 75%) !default;
-$footer-background-color: $header-background-color !default;
+$border-color: mix(#fff, #BBDEFB, 75%) !default;
+$footer-background-color: #FAFAFA !default;
 $link-color: #212121 !default;
-$masthead-link-color: $text-color !default;
-$masthead-link-color-hover: $text-color !default;
+$masthead-link-color: #FFFFFF !default;
+$masthead-link-color-hover: #f9f9f9 !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .page__footer {
   color: #444 !important;
-  background-color: #f0f0f0 !important;
+  background-color: #FAFAFA !important;
   font-weight: 100 !important;
-  border-top: 2px solid #bdbdbd !important;
+  border-top: 2px solid #EEE !important;
 }
 
 .page__footer a {
@@ -37,7 +37,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 }
 
 .masthead {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .4);
   background-color: $header-background-color !important;
   color: #fff !important;
   border-bottom: 0px !important;
@@ -47,15 +47,25 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
   padding: 0 1em !important;
 }
 
+.masthead__menu-item a {
+  font-size: 16px !important;
+  text-transform: none !important;
+}
+
+.masthead__menu-item a:hover {
+  border-bottom: 0 !important;
+}
+
 .greedy-nav {
   background-color: $header-background-color !important;
   color: #fff !important;
+  text-shadow: 0 1px 1px #424242;
 }
 
 .site-title, .visible-links {
   color: #fff !important;
   font-weight: 100 !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
 }

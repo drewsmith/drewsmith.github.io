@@ -223,7 +223,9 @@ tag_archive:
 #   layouts:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
-#   permalinks:
+  permalinks:
+    resume: /resume/
+
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
@@ -249,3 +251,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
