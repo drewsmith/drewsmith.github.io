@@ -225,6 +225,7 @@ tag_archive:
 #     tag: archive-taxonomy
   permalinks:
     resume: /resume/
+    posts: /posts/
 
 #     category: /categories/:name/
 #     tag: /tags/:name/

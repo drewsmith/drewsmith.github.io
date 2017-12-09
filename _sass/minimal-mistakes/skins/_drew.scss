@@ -15,6 +15,11 @@ $masthead-link-color: #FFFFFF !default;
 $masthead-link-color-hover: #f9f9f9 !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
+footer {
+  margin-top: 0 !important;
+  padding: 1em !important;
+}
+
 .page__footer {
   color: #444 !important;
   background-color: #FAFAFA !important;
