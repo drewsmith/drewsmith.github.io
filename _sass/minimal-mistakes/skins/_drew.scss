@@ -88,7 +88,42 @@ footer {
   font-size: .75em;
 }
 
-.underline {
-  border-bottom: 1px solid #f0f0f0 !important;
-  margin-bottom: 20px !important;
+.project-card {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+
+  h2 {
+    border-bottom: 1px solid #f0f0f0 !important;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    font-size: .8em !important;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 5px 10px;
+      background: $header-background-color;
+      color: #ffffff;
+      text-shadow: 1px 0 1px #000000;
+      font-size: .6em;
+      border-radius: 4px;
+      margin: 0 5px 0 0;
+      display: inline-block;
+    }
+  }
+
+  .footer {
+    font-size: .75em !important;
+    color: $muted-text-color;
+    margin: 20px 0 0 0;
+  }
 }
