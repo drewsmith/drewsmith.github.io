@@ -2,7 +2,7 @@
    Variables
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Montserrat|Oxygen');
 
 /*
    Typography
@@ -16,7 +16,7 @@ $indent-var                   : 1.3em !default;
 
 /* system typefaces */
 $serif                        : Georgia, Times, serif !default;
-$sans-serif                   : 'Montserrat', sans-serif !default;
+$sans-serif                   : 'Oxygen', sans-serif !default;
 /*
 -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 */
