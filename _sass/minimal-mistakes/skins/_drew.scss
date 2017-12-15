@@ -118,6 +118,10 @@ footer {
       border-radius: 4px;
       margin: 0 5px 0 0;
       display: inline-block;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+      &:hover {
+          background: #555555;
+      }
     }
   }
 
@@ -126,4 +130,4 @@ footer {
     color: $muted-text-color;
     margin: 20px 0 0 0;
   }
-}
+} /* projectcard */
