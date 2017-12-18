@@ -2,6 +2,43 @@
 permalink: "/projects/"
 ---
 <article class="project-card">
+  <h2>Vintage Amore</h2>
+  <p>
+    Coming Soon. An online store run by my wife who sells vintage housewares.
+  </p>
+  <ul>
+    <li>React</li>
+    <li>JavaScript</li>
+    <li>Webpack</li>
+    <li>Ruby on Rails</li>
+    <li>MySQL</li>
+    <li>AWS</li>
+  </ul>
+  <p class="footer">
+    <i class="fa fa-link" aria-hidden="true"></i> <a href="http://www.vintageamore.com">vintageamore.com</a>
+  </p>
+</article>
+
+<article class="project-card">
+  <h2>Streams.Academy</h2>
+  <p>
+    Coming Soon. An interactive portal for learning and testing Java's streams API.
+  </p>
+  <ul>
+    <li>React</li>
+    <li>JavaScript</li>
+    <li>Webpack</li>
+    <li>Java 8</li>
+    <li>AWS</li>
+  </ul>
+  <p class="footer">
+    <i class="fa fa-link" aria-hidden="true"></i> <a href="https://streamsacademy.herokuapp.com">streams.academy (demo)</a>
+    <br/>
+    <i class="fa fa-link" aria-hidden="true"></i> <a href="http://streams.academy">streams.academy (not live)</a>
+  </p>
+</article>
+
+<article class="project-card">
   <h2>Flashcards</h2>
   <p>
     Flashcards is a React Native application that allows a user to create a deck of flashcards containing a question and answer, then allows the user to take a quiz for an individual deck. The app works for both Android and iOS and is written 100% in JavaScript with no native code.
