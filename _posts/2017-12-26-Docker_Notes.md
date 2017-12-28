@@ -1,3 +1,8 @@
+---
+title:  "Docker Notes"
+categories: Tech, DevOps
+read_time: 15m
+---
 # Dockerfile
 * Each line (command) roughly equates to a layer
 * Combine commands to reduce layers
@@ -178,3 +183,17 @@ collection of endpoints that can communicated directly (bridges, VLANS) consists
 Managing addresses across multiple hosts on separate physical networks while providing routing to the underling swarm networks. This is less of an issue on a single host.
 
 Network drivers enable IPAM through DHCP drivers or plugin drivers
+
+## Security
+
+### Signing
+* Signed through push process
+* Use `export DOCKER_CONTENT_TRUST=[1|0]` to enable/disable
+
+### Identity Roles (UCP)
+
+* NONE - no access to swarm
+* VIEW ONLY - VIEW but cannot C, U, D
+* RESTRICTED - ability to edit resources , but not run containers/services (cannot mount or exec)
+* SCHEDULER - view nodes and schedule workloads. Needs additional permissions to perform other tasks
+* FULL - full access to user's resources. cannot see other user's resources
