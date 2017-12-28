@@ -1,7 +1,7 @@
 ---
 title:  "Docker Notes"
-categories: Tech, DevOps
-read_time: 15m
+categories: Tech,DevOps
+read_time: 15
 ---
 # Dockerfile
 * Each line (command) roughly equates to a layer
@@ -86,6 +86,8 @@ docker create volume myvolumename
 ```
 # container
 -v myvolumename:/mount/point
+# container with new, not host volume
+-V /mount/point
 # service
 --mount source=myvolumename,target=/mount/point
 # for host file (type=bind)
@@ -95,6 +97,9 @@ docker create volume myvolumename
 * Important component of making containers portable
 
 # Networking
+
+* The ability for any node in a cluster to answer for an exposed service port even if there is no replica for that service running on it, is handled by **routing mesh**.
+* default network interface is `docker0`
 
 # Bridge
 * Create a network with a bridge type and subnet `docker network create --driver=bridge --subnet=192.168.1.0/24 --opt "com.docker.network.driver.mtu"="1501" devel0`
@@ -117,7 +122,7 @@ docker create volume myvolumename
 ```
 
 ## External Ports
-* Use `-P` to publish the container on a random port
+* Use `-P` to publish the container a host port above 32xxx
 * Force port `-p LOCALPORT:CONTAINERPORT` or `--publish`
 
 ## Overlay Network
@@ -186,6 +191,8 @@ Network drivers enable IPAM through DHCP drivers or plugin drivers
 
 ## Security
 
+* Docker uses PID & Network namespaces to maintain isolation
+
 ### Signing
 * Signed through push process
 * Use `export DOCKER_CONTENT_TRUST=[1|0]` to enable/disable
@@ -197,3 +204,75 @@ Network drivers enable IPAM through DHCP drivers or plugin drivers
 * RESTRICTED - ability to edit resources , but not run containers/services (cannot mount or exec)
 * SCHEDULER - view nodes and schedule workloads. Needs additional permissions to perform other tasks
 * FULL - full access to user's resources. cannot see other user's resources
+
+# Swarm
+1 or more managers, 1 or more workers
+Maintain quorum (majority), min. HA quorum = 3
+
+## Init
+```
+docker swarm init --advertise-addr [IP Address] > manager.out
+```
+
+Join another manager to the swarm
+
+```
+docker swarm join-token manager
+```
+
+## Add Worker Nodes
+
+Get command from manager to join as worker
+
+```
+docker swarm join-token worker
+```
+
+List swarm nodes
+
+```
+docker node ls
+```
+
+## Remove worker
+
+from worker
+
+```
+docker swarm leave
+```
+
+from manager
+
+```
+docker node rm [node id]
+```
+
+## Backup/Restore
+
+```
+sudo systemctl stop docker
+sudo su -
+cp -rf /var/lib/docker/swarm /backupdir/swarm
+tar cvf swarm.tar /backupdir/swarm
+scp swarm.tar user@node
+ssh user@node
+tar xvf swarm.tar
+mv swarm /var/lib/docker
+```
+
+# Namespaces
+
+Provides isolation so that other pieces of the system are unaffected by whatever is in the namespace
+
+* PID
+* Mount
+* IPC (interprocess communication)
+* User namespaces
+* Network
+
+# cgroups
+
+provides means for allocation and granular control of resources
+
+* CPU, Memory, Network Bandwidth, Disk, Priority
