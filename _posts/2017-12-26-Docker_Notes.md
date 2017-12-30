@@ -276,3 +276,39 @@ Provides isolation so that other pieces of the system are unaffected by whatever
 provides means for allocation and granular control of resources
 
 * CPU, Memory, Network Bandwidth, Disk, Priority
+
+# Copy on Write (CoW)
+
+* `fork()` to create process
+* write without permission = segfault
+* Docker uses UnionMount for copy on write
+
+## Storage Driver
+
+### AUFS
+* legacy
+* Copy up to top level for write
+* mount() is fast so containers are quick
+
+### Devicemapper
+* complex
+* copy on write at block instead of file
+* each container gets a block device
+* each container gets a virtual disk, easier to port or limit
+* uses data and metadata sparse files which are large, which makes CoW slow
+
+### BTRFS
+* snapshat at subvolume level
+
+### Overlayfs
+* ufs but in kernel
+
+### VFS
+* not copy on write, it's copy on copy
+* space ineffecient and slow
+* use for legacy
+
+## TL;DR
+* PaaS = use AUFS or overlfs
+* Big CoW = BTRFS or DeviceMapper
+
