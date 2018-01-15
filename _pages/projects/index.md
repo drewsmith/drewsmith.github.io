@@ -113,3 +113,19 @@ permalink: "/projects/"
     <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/drewsmith/ltop">Source</a>
   </p>
 </article>
+
+<article class="project-card">
+  <h2 class="underline">HealtheAthlete iOS</h2>
+  <p>
+    This was a mobile application used at the point of care (i.e. on the sidelines). The primary users were NBA trainers and physicians, as well as several college athletic trainers for a variety of sports. It was written in native Objective-C and used OpenID authentication to make use of Java RESTful services.
+  </p>
+  <ul>
+    <li>Objective-C</li>
+    <li>iOS</li>
+    <li>OpenID</li>
+    <liJava</li>
+  </ul>
+  <p class="footer">
+    <i class="fa fa-link" aria-hidden="true"></i> <a href="https://itunes.apple.com/us/app/healtheathlete/id874710072?mt=8">iTunes</a>
+  </p>
+</article>
