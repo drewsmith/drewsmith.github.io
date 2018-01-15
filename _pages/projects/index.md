@@ -123,7 +123,7 @@ permalink: "/projects/"
     <li>Objective-C</li>
     <li>iOS</li>
     <li>OpenID</li>
-    <liJava</li>
+    <li>Java</li>
   </ul>
   <p class="footer">
     <i class="fa fa-link" aria-hidden="true"></i> <a href="https://itunes.apple.com/us/app/healtheathlete/id874710072?mt=8">iTunes</a>
