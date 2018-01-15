@@ -1,1 +1,69 @@
 
+==================================================================
+https://keybase.io/drewsmith
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://drewsmith.github.io
+  * I am drewsmith (https://keybase.io/drewsmith) on keybase.
+  * I have a public key with fingerprint 3FDD 4D08 2790 D316 2085  8621 11D6 57BB 8951 64F5
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01015dc4bd080fc712d59be75b077e091d7ccc0126e76a11a1b2734ef11fedea43800a",
+      "fingerprint": "3fdd4d082790d3162085862111d657bb895164f5",
+      "host": "keybase.io",
+      "key_id": "11d657bb895164f5",
+      "kid": "01015dc4bd080fc712d59be75b077e091d7ccc0126e76a11a1b2734ef11fedea43800a",
+      "uid": "63c2b6f6a77493444b6e18a4aa2ac519",
+      "username": "drewsmith"
+    },
+    "service": {
+      "hostname": "drewsmith.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1515987374,
+  "expire_in": 157680000,
+  "prev": "592e644273ea90fb686588242087e8f47184796d2a2dc612d9380086f66979cc",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSBVBGD7aVUvoIY4VormVWIjt7GVm9wQ96UNlVwRND5xmd2bPWS9n
+T7t71DSJqLSnMtAoI6wMwQej+0OUWSaR2s0iSpAQMyHKwK4PUc1avUSPvcwwP9/3
+zfd9M3dSZviSE74OTnSOOPXjCQO32uK+kmDmuTpOs8guLlDHldPpjVYQ6rihcpNw
+AY4HPJCJLmmEV3hDR0AgsqpRJGs8QpRXAUG6rvNAgBRBDAAGmoBEiRoAGJRQLIkK
+z2MuhzPMaJjaMduMukxWNAiRmKSAVJ6IAAq8IitQAAAQKCNNU1QZQMmQGTFiOR6D
+mdOwQ3NNi83YITRt7x/4/+w7Pi0HRV3QoAExQpIqSpKkQQoULGEsYF0Gqgd0qB3F
+lZShiU2rnUrTjXD1ORwbV5k69Zr1ovwNyQ2zJa79yhWzLdfSrQoGiLhuzAl4Au6u
+mMeoplrot1ZIM6OE9ckYVdR2TCvKBQBD6q7piQMZyKqCRCTlcLQmZto0ZHoIGUEW
+iue9e2gVk5RVgUJJYsEpVnlDgwqUFUWQ2GsgqhgSAoqEVEgELBAdsgpVrxWF9QBV
+pOo656XbGbW4AGQ2cZhJOmY4it24Tbn62z3Bmb6EZN/sWYneP/MlJy348/u2C3N9
+J49d9c/uX37i7hHdGSsMNzcs+eRf+Lbp9pX8ltMpbypXzsptyq4JJs+pbby0e2h+
+w7fn3ws/tq/f2GAf7G4cvr5n6bodY/qw2FN0/GTT2eyktJ7zvsJtQy/vlzqtzTfy
+2tcu+zAw+vTdASuN/Cjy14tbmkvSI63pnxe2rsNVBVsfHVxxOHNNWmFiV3xe3lQ/
+CrYNdA+m9r0INz7pbMjvDfZNrjkwSict/nGK/2ZpGFROXsvI7R2pPbTgdceDzZmZ
+EztOvW8n4yv2b/xSvOjM0a6y4gubmhLbLp55hjYMV3fnxRZvTS/IyugYb0H3Urfj
+4rLIPmdy9Srt4VT0cgFoUfZmvfoJUxBB5Q==
+=DSpT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/drewsmith
+
+==================================================================
