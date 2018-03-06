@@ -40,13 +40,10 @@ Thankfully, Node has a built-in inspect argument:
 
 Adding `--inspect` attaches the node debugger. There's more info and option here:
 
-https://nodejs.org/en/docs/inspector/
 
-But I found the easy way to profile a Node app is to use the NiM Chrome Extenions:
+[https://nodejs.org/en/docs/inspector/](https://nodejs.org/en/docs/inspector/)
 
-https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj?hl=en
-
-Which produces output similar to this:
+But I found the easy way to profile a Node app is to use the [NiM Chrome Extenion](https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj?hl=en), which produces output similar to this:
 
 ![Node debugger]({{ "/assets/images/node_profiling.png" | absolute_url }})
 
