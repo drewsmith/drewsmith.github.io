@@ -109,8 +109,6 @@ Running your node app in docker:
 
 *node_docker.sh*
 
-`chmod +x node_docker.sh`
-
 ```
 #!/bin/bash
 
@@ -123,4 +121,7 @@ docker run -v "$PWD":/usr/src/app \
   sh -c "npm install && npm run" # append args here to pass to your script
 ```
 
-`./node_docker.sh`
+```
+chmod +x node_docker.sh
+./node_docker.sh
+```
