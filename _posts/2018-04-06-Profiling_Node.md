@@ -50,7 +50,7 @@ If necessary, you can also bump up memory as well, but I would only do this if n
 
 # Bonus, async for loops
 
-A tangent that I ran into while accomplishing this was asynch handling in for loops, which natively execute in synchronously. This is an example solution that I came up with:
+A tangent that I ran into while accomplishing this was asynch handling in for loops, which natively execute synchronously. This is an example solution that I came up with:
 
 ```
 const forEachAsync = async (array, callback) => {
