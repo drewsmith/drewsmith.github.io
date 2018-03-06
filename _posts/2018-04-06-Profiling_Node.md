@@ -102,3 +102,25 @@ Name:  Winston Churchill
 getUsers complete.
 Complete
 ```
+
+# Bonus x2
+
+Running your node app in docker:
+
+*node_docker.sh*
+
+`chmod +x node_docker.sh`
+
+```
+#!/bin/bash
+
+# pass arguments to the bash script and 
+# access via $1, $2 ... $N
+
+docker run -v "$PWD":/usr/src/app \
+  -w /usr/src/app \
+  node:alpine \
+  sh -c "npm install && npm run" # append args here to pass to your script
+```
+
+`./node_docker.sh`
