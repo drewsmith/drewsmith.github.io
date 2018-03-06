@@ -1,6 +1,6 @@
 ---
 title:  "Docker Notes"
-categories: Tech,DevOps
+categories: DevOps Docker
 read_time: 15
 ---
 # Dockerfile
