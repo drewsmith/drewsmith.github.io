@@ -2,7 +2,6 @@
 title:  "Profiling Node"
 categories: Web JS
 ---
-# Profiling Node
 
 Recently I ran into a memory leak while running a node script to migrate ~300MM rows from Postgres to DynamoDB.
 
