@@ -24,7 +24,7 @@ This outputs an info object similar to:
   reason: 'heap growth over 5 consecutive GCs (20s) - 11.67 mb/hr' }
 ```
 
-Unfortantely, this is more a symptom or warning than a cause.
+Unfortantely, this identifies issues that are more a symptom or warning than a cause.
 
 ## Node Inspector
 
@@ -38,16 +38,15 @@ Thankfully, Node has a built-in inspect argument:
 }
 ```
 
-Adding `--inspect` attaches the node debugger. There's more info and option here:
-
+Adding `--inspect` attaches the node debugger, which you can read more on here:
 
 [https://nodejs.org/en/docs/inspector/](https://nodejs.org/en/docs/inspector/)
 
-But I found the easy way to profile a Node app is to use the [NiM Chrome Extenion](https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj?hl=en), which produces output similar to this:
+I found the easy way to profile a Node app is to use the [NiM Chrome Extenion](https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj?hl=en), which produces output similar to this:
 
 ![Node debugger]({{ "/assets/images/node_profiling.png" | absolute_url }})
 
-If necessary, you can also bump up memory as well:
+If necessary, you can also bump up memory as well, but I would only do this if necessary and bumping up memory is not fixing the root cause:
 
 ```
 "scripts": {
@@ -57,8 +56,7 @@ If necessary, you can also bump up memory as well:
 
 # Bonus, async for loops
 
-A tangent that I ran into while accomplishing this was asynch handling in for loops, which natively is synchronous. This 
-is solution I came up with:
+A tangent that I ran into while accomplishing this was asynch handling in for loops, which natively execute in synchronously. This is an example solution that I came up with:
 
 ```
 const forEachAsync = async (array, callback) => {
@@ -67,7 +65,7 @@ const forEachAsync = async (array, callback) => {
   }
 }
 
-const userService = {
+const UserService = {
   getName: async (user) => `${user.firstName} ${user.lastName}`
 }
 
@@ -81,7 +79,7 @@ const users = [
 const getUserNames = async () => {
   await forEachAsync(users, async user => {
     try {
-      let name = await userService.getName(user);
+      let name = await UserService.getName(user);
       console.log("Name: ", name);
     } catch (err) {
       console.error(err.message);
@@ -91,7 +89,11 @@ const getUserNames = async () => {
 };
 
 (async () => {
-  await getUserNames();
+  try {
+    await getUserNames();
+  } catch (err) {
+    console.log(err.message);
+  }
   console.log("Complete");
 })();
 ```
