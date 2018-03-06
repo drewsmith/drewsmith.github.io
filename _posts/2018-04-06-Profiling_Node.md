@@ -5,9 +5,7 @@ categories: Web JS
 
 Recently I ran into a memory leak while running a node script to migrate ~300MM rows from Postgres to DynamoDB.
 
-The first step was to add memwatch:
-
-https://github.com/lloyd/node-memwatch
+The first step was to add [node-memwatch](https://github.com/lloyd/node-memwatch):
 
 ```
 const memwatch = require('memwatch');
