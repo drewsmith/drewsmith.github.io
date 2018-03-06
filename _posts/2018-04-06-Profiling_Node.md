@@ -103,7 +103,7 @@ getUsers complete.
 Complete
 ```
 
-# Bonus x2
+# Bonus x2, Docker
 
 Running your node app in docker:
 
