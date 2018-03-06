@@ -50,6 +50,8 @@ https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldci
 
 Which produces output similar to this:
 
+![Node debugger]({{ "/assets/node_profiling.png" | absolute_url }})
+
 If necessary, you can also bump up memory as well:
 
 ```
